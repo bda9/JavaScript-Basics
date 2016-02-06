@@ -122,15 +122,24 @@ var counter = function(){
 
 //Next Problem
 
-/*
-  Make the following code work
+//  Make the following code work
 
+var funcArray = {};
+[0,1,2,3,4,5].forEach(function(i) {        // let's create 6 functions
+    funcArray[i] = function() {            // and store them in funcs
+        console.log(i);                    // each should log its value.
+    };
+})
+for (var j = 0; j < 5; j++) {
+    funcArray[j]();                        // and now let's run each one to see
+}
+
+/*
   funcArray[0]() //0
   funcArray[1]() //1
   funcArray[2]() //2
   funcArray[3]() //3
   funcArray[4]() //4
   funcArray[5]() //5
-
-  *Hint: Don't let this fool you. Break down what's really happening here.
 */
+//  *Hint: Don't let this fool you. Break down what's really happening here.
