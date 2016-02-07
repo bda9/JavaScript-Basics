@@ -126,8 +126,7 @@ var counter = function(){
 
 var funcArray = {};
 [0,1,2,3,4,5].forEach(function(i) {        // let's create 6 functions
-    funcArray[i] = function() {            // and store them in funcs
-        console.log(i);                    // each should log its value.
+    funcArray[i] = function() {            // and store them in funcArray
     };
 })
 for (var j = 0; j < 5; j++) {
